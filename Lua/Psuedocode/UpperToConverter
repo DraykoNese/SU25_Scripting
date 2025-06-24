@@ -1,0 +1,16 @@
+--print("Hello from Convert to Upper") 
+--Take a user string and return/print as a capital
+function changeToUpper()
+--variables
+userInput = nil
+upperUserInput = nil
+
+--while user input is invalid or unable to be capitalized
+while userInupt== nil or userInput=="" or userInput == string.upper(userInput) or tonumber(userInput)
+    print("insert text to capitralize: ")
+    userInput = io.read()
+end
+upperUserinput = string.upper(userInput)
+
+return(upperUserInput)
+end
