@@ -1,0 +1,21 @@
+
+math.randomseed(os.time())
+--make up secret number to be guessed
+local secretNumber = math.random(1, 100)
+local guess = 0
+--welcome player and explain rules
+print("Welcome to the Guessing Game! Try to guess the number between 1 and 100.")
+
+while guess ~= secretNumber do
+    io.write("Enter your guess: ")
+    guess = tonumber(io.read())
+--based on if number is smaller than secret number
+    if guess < secretNumber then
+        print("Too low! Try again.")
+    --if number is larger than secret number
+    elseif guess > secretNumber then
+        print("Too high! Try again.")
+    else
+        print("Congratulations! You've guessed the number!")
+    end
+end
