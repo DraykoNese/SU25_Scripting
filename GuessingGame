@@ -19,3 +19,7 @@ while guess ~= secretNumber do
         print("Congratulations! You've guessed the number!")
     end
 end
+
+
+
+by Jeremiah R
